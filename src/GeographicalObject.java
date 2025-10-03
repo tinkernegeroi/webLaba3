@@ -25,9 +25,19 @@ class GeographicalObject {
         this.mouth = mouth;
     }
 
+    /**
+     * Возвращает название географического объекта.
+     *
+     * @return название
+     */
     public String getName() { return name; }
+
+    /**
+     * Возвращает длину объекта.
+     *
+     * @return длина в километрах
+     */
     public int getLength() { return length; }
-    public String getLocation() { return location; }
 
     /**
      * Печатает информацию об объекте.
@@ -52,7 +62,30 @@ class GeographicalObject {
         }
     }
 
-    public void setLocation(String location) { this.location = location; }
-    public void setSource(String source) { this.source = source; }
-    public void setMouth(String mouth) { this.mouth = mouth; }
+    /**
+     * Устанавливает новое местоположение объекта.
+     *
+     * @param location местоположение
+     */
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    /**
+     * Устанавливает новый исток объекта.
+     *
+     * @param source исток
+     */
+    public void setSource(String source) {
+        this.source = source;
+    }
+
+    /**
+     * Устанавливает новое устье объекта.
+     *
+     * @param mouth устье
+     */
+    public void setMouth(String mouth) {
+        this.mouth = mouth;
+    }
 }

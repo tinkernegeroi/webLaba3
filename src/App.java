@@ -18,7 +18,7 @@ public class App {
     /**
      * Печатает информацию о лабораторной работе и задании.
      */
-    public void printInfo(){
+    public void printLabInfo(){
         System.out.println("Лабораторная работа №3");
         System.out.println("Выполнили студенты группы 24ВП1 Песков Роман и Фомин Владислав");
         System.out.println("Задание: – определить самую короткую реку;" +
@@ -36,7 +36,7 @@ public class App {
         System.out.println("2 - Вывести все реки");
         System.out.println("3 - Найти самую короткую реку");
         System.out.println("4 - Вывести реки длиннее средней");
-        System.out.println("5 - Упорядочить список по названиям");
+        System.out.println("5 - Упорядочить список по алфавиту");
         System.out.println("6 - Поиск по названию и редактирование");
         System.out.println("0 - Выход");
     }
@@ -125,11 +125,13 @@ public class App {
      */
     public void run(){
         rivers.addRiver(new PlainRiver("Волга", 3530, "Россия", "Валдайская возвышенность", "Каспийское море",
-                8060, 20, true, 1.5, 25, 3));
+                8060, 20, true));
         rivers.addRiver(new MountainRiver("Катунь", 688, "Алтай", "Южно-Чуйский хребет", "Обь",
-                700, 5, false, 15, 1200, 4.5));
+                700, 5, false));
         rivers.addRiver(new PlainRiver("Днепр", 2200, "Украина/Беларусь/Россия", "Валдайская возвышенность", "Черное море",
-                1670, 10, true, 1.2, 10, 2));
+                1670, 10, true));
+
+        printLabInfo();
 
         int choice;
         do {

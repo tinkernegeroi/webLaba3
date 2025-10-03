@@ -26,15 +26,6 @@ class River extends GeographicalObject {
         this.navigable = navigable;
     }
 
-    public boolean isNavigable() { return navigable; }
-
-    /**
-     * Изменяет длину реки.
-     *
-     * @param newLength новая длина
-     */
-    public void editLength(int newLength) { this.length = newLength; }
-
     /**
      * Устанавливает расход воды.
      *
@@ -61,6 +52,11 @@ class River extends GeographicalObject {
         }
     }
 
+    /**
+     * Устанавливает судоходность
+     *
+     * @param navigable судоходность
+     * */
     public void setNavigable(boolean navigable) { this.navigable = navigable; }
 
     /**
