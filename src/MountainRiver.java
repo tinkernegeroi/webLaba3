@@ -1,8 +1,14 @@
+/**
+ * Класс, описывающий горную реку.
+ */
 class MountainRiver extends River {
     private int rapidsCount;      // количество порогов
     private double heightDrop;    // перепад высот
     private double averageSlope;  // средний уклон
 
+    /**
+     * Конструктор класса MountainRiver.
+     */
     public MountainRiver(String name, int length, String location, String source, String mouth,
                          double flowRate, double depth, boolean navigable,
                          int rapidsCount, double heightDrop, double averageSlope) {
@@ -12,6 +18,9 @@ class MountainRiver extends River {
         this.averageSlope = averageSlope;
     }
 
+    /**
+     * Выводит информацию о горной реке.
+     */
     @Override
     public void printInfo() {
         super.printInfo();
